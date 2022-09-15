@@ -1,0 +1,24 @@
+.singleProduct {
+  @apply container pt-5 px-5 gap-5 mx-auto flex;
+  @media (max-width: 767px) {
+    @apply flex-col;
+  }
+}
+
+.img {
+  @apply flex w-1/2 max-w-fit;
+  @media (max-width: 767px) {
+    @apply w-full;
+  }
+}
+
+.info {
+  @apply flex-col w-1/2;
+  @media (max-width: 767px) {
+    @apply w-full;
+  }
+}
+
+.title {
+  @apply font-bold text-xl;
+}

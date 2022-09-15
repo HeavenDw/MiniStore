@@ -14,7 +14,7 @@ const Select = () => {
   }
 
   return (
-    <div className="container pt-5 mx-auto flex gap-5 mb-5">
+    <div className="container px-5 pt-5 mx-auto flex gap-5 mb-5">
       <p className="font-bold">How many products to show: </p>
       <select
         className="cursor-pointer border"

@@ -3,6 +3,8 @@ import { useAppSelector } from '../../hooks';
 import { EProductsSliceStatus, IProduct } from '../../models';
 import Product from '../Product/Product';
 
+import styles from './Products.module.css';
+
 const Products = () => {
   const { products, status } = useAppSelector((state) => state.products);
 
@@ -15,7 +17,7 @@ const Products = () => {
   }
 
   return (
-    <div className="container pt-5 mx-auto grid grid-cols-3 gap-10 mb-5">
+    <div className={`${styles.products} container px-5 pt-5 mx-auto mb-5 products`}>
       {products.map((product: IProduct) => (
         <Product product={product} key={product.id} />
       ))}
